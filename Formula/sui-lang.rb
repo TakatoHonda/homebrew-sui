@@ -1,8 +1,8 @@
 class SuiLang < Formula
   desc "A programming language optimized for LLM code generation"
   homepage "https://github.com/TakatoHonda/sui-lang"
-  url "https://github.com/TakatoHonda/sui-lang/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "b4fb3f112d9959ae3c5bb24f9edda7d6ac3b6544a9739a351685100e1f797058"
+  url "https://github.com/TakatoHonda/sui-lang/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "6589a43d7a62f428fd9bfeff3d9963d57edada086331e1ef9550668d70a5b23f"
   license "MIT"
 
   depends_on "python@3.11"
@@ -10,6 +10,7 @@ class SuiLang < Formula
   def install
     # Install Python files
     libexec.install "sui.py", "sui2py.py", "py2sui.py"
+    libexec.install "repl"
     
     # Create wrapper scripts
     (bin/"sui").write <<~EOS
