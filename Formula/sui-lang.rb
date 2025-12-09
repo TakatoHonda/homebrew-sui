@@ -1,8 +1,8 @@
 class SuiLang < Formula
   desc "A programming language optimized for LLM code generation"
   homepage "https://github.com/TakatoHonda/sui-lang"
-  url "https://github.com/TakatoHonda/sui-lang/archive/refs/tags/v0.4.1.tar.gz"
-  sha256 "bb861f1d5c8d30126942d793fc635cf34b3322a94c2244655740b23cc06d04db"
+  url "https://github.com/TakatoHonda/sui-lang/archive/refs/tags/v0.4.2.tar.gz"
+  sha256 "f9b2684a4f41ea1dacd63444d403602230495d4a5d2bbdc77aeac758a49c964f"
   license "MIT"
 
   depends_on "python@3.11"
